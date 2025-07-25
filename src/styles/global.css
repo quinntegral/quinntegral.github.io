@@ -1,0 +1,63 @@
+/* 1. Import font */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+
+/* 2. Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Bitcount Prop Single', system-ui, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.main-content {
+  position: relative; /* create stacking context */
+  z-index: 1;         /* above shader */
+  max-width: 80ch;
+  line-height: 1.4;
+  color: #fff;
+  font-size: 1.2rem;
+  background: #669cff88;
+  /*#ff7152 1f5aff 669cff*/
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style links container */
+.link-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Style links */
+a {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
